@@ -1,6 +1,6 @@
-defmodule PotionTest do
+defmodule ExpelTest do
   use ExUnit.Case
-  doctest Potion
+  doctest Expel
 
   test "the truth" do
     assert 1 + 1 == 2

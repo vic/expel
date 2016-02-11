@@ -1,4 +1,4 @@
-defmodule Potion.Decoder do
+defmodule Expel.Decoder do
 
   def decode_quoted(json) do
     json

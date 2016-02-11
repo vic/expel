@@ -1,4 +1,4 @@
-defmodule Potion.EncoderTest do
+defmodule Expel.EncoderTest do
 
   use ExUnit.Case
 
@@ -14,7 +14,7 @@ defmodule Potion.EncoderTest do
     quote(do: 1) |> assert_encode_quoted
   end
 
-  test "encodes quoted integer into valid json form" do
+  test "encodes quoted float into valid json form" do
     quote(do: 98.5) |> assert_encode_quoted
   end
 
@@ -53,8 +53,8 @@ defmodule Potion.EncoderTest do
   end
 
   defp assert_encode_quoted(quoted) do
-    {:ok, json} = Potion.Encoder.encode_quoted(quoted)
-    {:ok, form} = Potion.Decoder.decode_quoted(json)
+    {:ok, json} = Expel.Encoder.encode_quoted(quoted)
+    {:ok, form} = Expel.Decoder.decode_quoted(json)
     unless quoted == form do
       flunk("""
       Expected quoted expression

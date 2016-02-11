@@ -1,2 +1,0 @@
-defmodule Potion do
-end

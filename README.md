@@ -1,4 +1,4 @@
-# Potion
+# Expel
 
 **TODO: Add description**
 
@@ -6,15 +6,15 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add potion to your list of dependencies in `mix.exs`:
+  1. Add expel to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:potion, "~> 0.0.1"}]
+          [{:expel, "~> 0.0.1"}]
         end
 
-  2. Ensure potion is started before your application:
+  2. Ensure expel is started before your application:
 
         def application do
-          [applications: [:potion]]
+          [applications: [:expel]]
         end
 

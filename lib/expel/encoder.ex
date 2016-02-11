@@ -1,4 +1,4 @@
-defmodule Potion.Encoder do
+defmodule Expel.Encoder do
 
   def encode_quoted(quoted) do
     encode(quoted) |> Poison.encode
