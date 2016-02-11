@@ -1,6 +1,6 @@
 defmodule Expel.Decoder do
 
-  def decode_quoted(json) do
+  def decode_json(json) do
     json
     |> Poison.decode
     |> case do

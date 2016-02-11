@@ -1,6 +1,10 @@
 defmodule Expel.Encoder do
 
   def encode_quoted(quoted) do
+    encode(quoted)
+  end
+
+  def json_encode(quoted) do
     encode(quoted) |> Poison.encode
   end
 
