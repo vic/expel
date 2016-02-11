@@ -14,6 +14,10 @@ defmodule Potion.EncoderTest do
     quote(do: 1) |> assert_encode_quoted
   end
 
+  test "encodes quoted integer into valid json form" do
+    quote(do: 98.5) |> assert_encode_quoted
+  end
+
   test "encodes quoted string into valid json form" do
     quote(do: "hola") |> assert_encode_quoted
   end

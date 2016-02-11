@@ -8,6 +8,7 @@ defmodule Potion.Encoder do
   defp encode(true), do: true
   defp encode(false), do: false
   defp encode(x) when is_integer(x), do: %{integer: x}
+  defp encode(x) when is_float(x), do: %{float: x}
   defp encode(x) when is_binary(x), do: %{binary: x}
   defp encode(x) when is_atom(x), do: %{atom: x}
   defp encode(x) when is_tuple(x), do: %{tuple: encode_enum(x)}

@@ -13,6 +13,7 @@ defmodule Potion.Decoder do
   defp decode(true), do: true
   defp decode(false), do: false
   defp decode(%{"integer" => x}), do: x
+  defp decode(%{"float" => x}), do: x
   defp decode(%{"binary" => x}), do: x
   defp decode(%{"atom" => x}), do: String.to_atom(x)
 
